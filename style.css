@@ -61,12 +61,12 @@ body {
   letter-spacing: 1px;
 }
 
-.section-card .texts h2 {
+.section-card .texts h1 {
   font-weight: 600;
   cursor: pointer;
 }
 
-.section-card .texts h2:hover {
+.section-card .texts h1:hover {
   color: hsl(178, 100%, 50%);
 }
 
@@ -189,7 +189,7 @@ a {
     width: 85%;
   }
 
-  .section-card .texts h2 {
+  .section-card .texts h1 {
     font-size: 1rem;
   }
   
