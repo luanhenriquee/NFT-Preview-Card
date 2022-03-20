@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.container {
+  height: 90vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin: 2rem;
+  box-shadow: 25px 45px RGB(12, 23, 41), -25px 45px RGB(12, 23, 41), 55px 75px RGB(12, 24, 43), -55px 75px RGB(12, 24, 43), 55px -40px RGB(12, 24, 43), -55px -40px RGB(12, 24, 43);
+}
+
+.section-card .image {
+  position: relative;
+}
+
+.section-card .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+}
+
+.section-card .image:hover::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  border-radius: 0.8rem;
+  opacity: 80%;
+  top: 0;
+  content: url(images/icon-view.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.section-card .texts {
+  letter-spacing: 1px;
+}
+
+.section-card .texts h2 {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.section-card .texts h2:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.section-card p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.section-card .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-card .info .info-eth {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.section-card .info .info-eth p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.section-card .info .info-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.section-card .info .info-date p {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.section-card .divider {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.section-card .author {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.section-card .author img {
+  width: 10%;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.section-card .author p {
+  font-weight: 400;
+}
+
+.section-card .author p span {
+  color: white;
+  cursor: pointer;
+}
+
+.section-card .author p span:hover {
+  color:hsl(178, 100%, 50%);
+}
+
+footer {
+  background-color: var(--body-color);
+  height: 10vh;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+a {
+  color: white;
+}
+
+@media (min-width: 1401px) {
+  .section-card {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .section-card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 951px) and (max-width: 1200px) {
+  .section-card {
+    width: 35%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 950px) {
+  .section-card {
+    width: 45%
+  }
+
+}
+
+@media (min-width: 551px) and (max-width: 768px) {
+  .section-card {
+    width: 55%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 550px) {
+  .section-card {
+    width: 75%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .section-card {
+    width: 85%;
+  }
+
+  .section-card .texts h2 {
+    font-size: 1rem;
+  }
+  
+  .section-card p {
+    font-size: 0.8rem;
+  }
+
+}
